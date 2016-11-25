@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.mp-main {
+  position: absolute;
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+  overflow-x: hidden; }
+
+.mp-head-main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #fff; }
+
+.mp-head-logo {
+  display: inline-block;
+  line-height: 80px; }
+
+.mp-head-cnt {
+  float: right;
+  line-height: 80px; }
+
+.mp-head-cls {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 40px; }
+
+.mp-head-login-cnt {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #de143a;
+  text-align: center; }
+
+.mp-cnt-main {
+  position: relative;
+  top: 80px;
+  bottom: 60px;
+  height: 669px;
+  background: url("img/mg-bg.jpg") repeat; }
+
+.mp-foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #a1a1a1; }
+
+/*完善账户信息*/
+.mp-updAccount-prg-main {
+  width: 926px;
+  height: 400px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%; }
+
+.mp-updAccount-prg-hd {
+  padding-top: 22px;
+  padding-left: 40px;
+  padding-right: 27px;
+  font-size: 24px;
+  color: #999; }
+
+.mp-updAccount-prompt-cnt {
+  width: 365px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center; }
+
+.mp-updAccount-prg-btn {
+  width: 365px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer; }
+
+.mp-updAccount-prg-btn1 {
+  color: #fff;
+  background: #de143a; }
+
+.mp-updAccount-prg-btn1:hover {
+  background: #cc1437; }
+
+.mp-updAccount-prg-btn2 {
+  color: #de143a;
+  background: #fff;
+  border: 1px solid #de143a; }
+
+.mp-updAccount-prg-btn2:hover {
+  border-color: #cc1437;
+  color: #cc1437; }
+
+.mp-updAccount-prg-btn-mg {
+  margin-bottom: 10px; }
+
+.mp-updAccount-prompt-user {
+  margin-top: 15px;
+  margin-bottom: 40px; }
+
+.mp-updAccount-prg-ft {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+/*完善账户信息End*/
+
+/*# sourceMappingURL=frame.css.map */

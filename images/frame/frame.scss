@@ -1,0 +1,138 @@
+@charset "UTF-8";
+$mp-head-h: 80px; //头部高度
+$mp-red: #de143a; //主题红色色值
+$mp-red-active: #cc1437; //主题红色获取到焦点色值
+$mp-hdft-pl: 100px; //头部和底部左右padding
+.mp-main {
+  position: absolute;
+  width: 100%;
+  min-width: 1000px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.mp-head-main {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: $mp-head-h;
+  padding-left: $mp-hdft-pl;
+  padding-right: $mp-hdft-pl;
+  background: #fff;
+}
+
+.mp-head-logo {
+  display: inline-block;
+  line-height: $mp-head-h;
+}
+
+//mp-head-content
+.mp-head-cnt {
+  float: right;
+  line-height: $mp-head-h;
+}
+
+.mp-head-cls {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 40px;
+}
+
+.mp-head-login-cnt {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid $mp-red;
+  text-align: center;
+}
+
+.mp-cnt-main {
+  position: relative;
+  top: 80px;
+  bottom: 60px;
+  height: 669px;
+  background: url("img/mg-bg.jpg") repeat;
+}
+
+$mp-foot-h: 60px; //底部高度
+.mp-foot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: $mp-foot-h;
+  line-height: $mp-foot-h;
+  background: #fff;
+  padding-left: $mp-hdft-pl;
+  padding-right: $mp-hdft-pl;
+  color: #a1a1a1;
+}
+
+/*完善账户信息*/
+.mp-updAccount-prg-main {
+  width: 926px;
+  height: 400px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.mp-updAccount-prg-hd {
+  padding-top: 22px;
+  padding-left: 40px;
+  padding-right: 27px;
+  font-size: 24px;
+  color: #999;
+}
+
+.mp-updAccount-prompt-cnt {
+  width: 365px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.mp-updAccount-prg-btn {
+  width: 365px;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.mp-updAccount-prg-btn1 {
+  color: #fff;
+  background: $mp-red;
+}
+
+.mp-updAccount-prg-btn1:hover {
+  background: $mp-red-active;
+}
+
+.mp-updAccount-prg-btn2 {
+  color: $mp-red;
+  background: #fff;
+  border: 1px solid $mp-red;
+}
+
+.mp-updAccount-prg-btn2:hover {
+  border-color: $mp-red-active;
+  color: $mp-red-active;
+}
+
+.mp-updAccount-prg-btn-mg {
+  margin-bottom: 10px;
+}
+
+.mp-updAccount-prompt-user {
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.mp-updAccount-prg-ft {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/*完善账户信息End*/
