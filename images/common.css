@@ -5,6 +5,16 @@
 .mr40 {
   margin-right: 40px; }
 
+.mb11 {
+  margin-bottom: 11px; }
+
+.mb20 {
+  margin-bottom: 20px; }
+
 /*marin End*/
+.mp-ipt-text {
+  border: 1px solid #c6cacb;
+  padding-left: 5px;
+  padding-right: 5px; }
 
 /*# sourceMappingURL=common.css.map */

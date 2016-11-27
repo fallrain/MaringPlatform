@@ -7,5 +7,16 @@
 .mr40 {
   margin-right: 40px;
 }
-
+.mb11{
+  margin-bottom: 11px;
+}
+.mb20{
+  margin-bottom: 20px;
+}
 /*marin End*/
+$mp-ipt-color: #c6cacb;
+.mp-ipt-text {
+  border: 1px solid $mp-ipt-color;
+  padding-left: 5px;
+  padding-right: 5px;
+}

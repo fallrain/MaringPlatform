@@ -51,7 +51,8 @@ $mp-hdft-pl: 100px; //头部和底部左右padding
   position: relative;
   top: 80px;
   bottom: 60px;
-  height: 669px;
+  height: 100%;
+  min-height: 669px;
   background: url("img/mg-bg.jpg") repeat;
 }
 
@@ -71,7 +72,7 @@ $mp-foot-h: 60px; //底部高度
 /*完善账户信息*/
 .mp-updAccount-prg-main {
   width: 926px;
-  height: 400px;
+  height: 460px;
   background: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -90,7 +91,7 @@ $mp-foot-h: 60px; //底部高度
   width: 365px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
 }
 
@@ -98,7 +99,9 @@ $mp-foot-h: 60px; //底部高度
   width: 365px;
   height: 40px;
   line-height: 40px;
+  color: #fff;
   cursor: pointer;
+  font-size: 13px;
 }
 
 .mp-updAccount-prg-btn1 {
@@ -137,10 +140,12 @@ $mp-foot-h: 60px; //底部高度
 
 .mp-updAccount-prg-itm {
   width: 246px;
+  text-align: center;
   float: left;
 }
 
-.mp-updAccount-prg-itm-active .mp-updAccount-prg-itm-pic {
+.mp-updAccount-prg-itm-active .mp-updAccount-prg-itm-pic,
+.mp-updAccount-prg-itm-active .mp-updAccount-prg-itm-star {
   background: $mp-red;
 }
 
@@ -153,7 +158,7 @@ $mp-foot-h: 60px; //底部高度
   background: #c6cacb;
   width: 100%;
   height: 1px;
-  margin-top: 15px;
+  margin-top: 27px;
 }
 
 .mp-updAccount-prg-itm-starMask {
@@ -177,4 +182,38 @@ $mp-foot-h: 60px; //底部高度
   margin-left: -11.5px;
 }
 
+.mp-updAccount-prg-itm-title {
+  font-size: 14px;
+}
+
+.mp-updAccount-prg {
+  margin-top: 46px;
+  margin-bottom: 66px;
+  padding-left: 94px;
+  padding-right: 94px;
+}
+.mp-updAccount-prg:after{
+  content: '';
+  display: block;
+  clear: both;
+}
+.mp-updAccount-form-gp{
+  vertical-align: middle;
+  display: table;
+  margin-left:168px;
+  margin-right:auto;
+}
+.mp-updAccount-form-name{
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  margin-right: 12px;
+  font-size: 13px;
+}
+
+.mp-updAccount-form-val-ipt{
+  width: 365px;
+  height: 40px;
+
+}
 /*完善账户信息End*/
