@@ -38,7 +38,6 @@ hs_err_pid*
 .idea
 *.idea
 *.iml
-*.xml
 overlays/
 jxl.log
 
