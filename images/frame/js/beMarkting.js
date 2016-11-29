@@ -3,8 +3,25 @@
  * Created by wangguangkai on 2016/11/29.
  */
 var BeMarking = Class.extend({
+  init: function(){
+    this.openMktAccnt();
+  },
   url: {
     applyMarketAccount: Common.domainHead + '/user/applyMarketAccount',
+  },
+  openMktAccnt: function(){
+    layer.open({
+      type: 1,
+      title: false,
+      fix: false,
+      closeBtn:1,
+      //fixed:false,
+      area: ['940px', '490px'],
+      content: $('#mp-updAccount-prg-main'),
+      end: function(){
+        //layer.tips('Hi', '#about', {tips: 1})
+      }
+    });
   },
   applyMarketAccount: function(){
     Common.sendFormData(this.url.applyMarketAccount,
