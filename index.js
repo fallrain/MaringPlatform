@@ -6,6 +6,7 @@
   var vDate = new Date().getTime();
   var urlAys = [
     'images/app/js/common.js?v=' + vDate,
+    'images/app/js/layer-v3.0.1/layer.js?v=' + vDate,
     'images/frame/js/beMarkting.js?v' + vDate,
   ];
   for(var i = 0; i < urlAys.length; i++){
