@@ -1,51 +1,40 @@
 @charset "UTF-8";
-$mp-head-h: 80px; //头部高度
-$mp-red: #de143a; //主题红色色值
-$mp-red-active: #cc1437; //主题红色获取到焦点色值
-$mp-hdft-pl: 100px; //头部和底部左右padding
 .mp-main {
   position: absolute;
   width: 100%;
   min-width: 1000px;
   height: 100%;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 .mp-head-main {
   position: absolute;
   top: 0;
   width: 100%;
-  height: $mp-head-h;
-  padding-left: $mp-hdft-pl;
-  padding-right: $mp-hdft-pl;
-  background: #fff;
-}
+  height: 80px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #fff; }
 
 .mp-head-logo {
   display: inline-block;
-  line-height: $mp-head-h;
-}
+  line-height: 80px; }
 
-//mp-head-content
 .mp-head-cnt {
   float: right;
-  line-height: $mp-head-h;
-}
+  line-height: 80px; }
 
 .mp-head-cls {
   font-size: 14px;
   font-weight: 600;
-  margin-right: 40px;
-}
+  margin-right: 40px; }
 
 .mp-head-login-cnt {
   display: inline-block;
   width: 120px;
   height: 40px;
   line-height: 40px;
-  border: 1px solid $mp-red;
-  text-align: center;
-}
+  border: 1px solid #de143a;
+  text-align: center; }
 
 .mp-cnt-main {
   position: relative;
@@ -53,21 +42,18 @@ $mp-hdft-pl: 100px; //头部和底部左右padding
   bottom: 60px;
   height: 100%;
   min-height: 669px;
-  background: url("img/mg-bg.jpg") repeat;
-}
+  background: url("../img/mg-bg.jpg") repeat; }
 
-$mp-foot-h: 60px; //底部高度
 .mp-foot {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: $mp-foot-h;
-  line-height: $mp-foot-h;
+  height: 60px;
+  line-height: 60px;
   background: #fff;
-  padding-left: $mp-hdft-pl;
-  padding-right: $mp-hdft-pl;
-  color: #a1a1a1;
-}
+  padding-left: 100px;
+  padding-right: 100px;
+  color: #a1a1a1; }
 
 /*完善账户信息*/
 .mp-updAccount-prg-main {
@@ -76,24 +62,21 @@ $mp-foot-h: 60px; //底部高度
   background: #fff;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3%;
-}
+  margin-top: 3%; }
 
 .mp-updAccount-prg-hd {
   padding-top: 22px;
   padding-left: 40px;
   padding-right: 27px;
   font-size: 24px;
-  color: #999;
-}
+  color: #999; }
 
 .mp-updAccount-prompt-cnt {
   width: 365px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  text-align: center;
-}
+  text-align: center; }
 
 .mp-updAccount-prg-btn {
   width: 365px;
@@ -101,69 +84,56 @@ $mp-foot-h: 60px; //底部高度
   line-height: 40px;
   color: #fff;
   cursor: pointer;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
 .mp-updAccount-prg-btn1 {
   color: #fff;
-  background: $mp-red;
-}
+  background: #de143a; }
 
 .mp-updAccount-prg-btn1:hover {
-  background: $mp-red-active;
-}
+  background: #cc1437; }
 
 .mp-updAccount-prg-btn2 {
-  color: $mp-red;
+  color: #de143a;
   background: #fff;
-  border: 1px solid $mp-red;
-}
+  border: 1px solid #de143a; }
 
 .mp-updAccount-prg-btn2:hover {
-  border-color: $mp-red-active;
-  color: $mp-red-active;
-}
+  border-color: #cc1437;
+  color: #cc1437; }
 
 .mp-updAccount-prg-btn-mg {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .mp-updAccount-prompt-user {
   margin-top: 15px;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
 .mp-updAccount-prg-ft {
   margin-top: 20px;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 .mp-updAccount-prg-itm {
   width: 246px;
   text-align: center;
-  float: left;
-}
+  float: left; }
 
 .mp-updAccount-prg-itm-active .mp-updAccount-prg-itm-pic,
 .mp-updAccount-prg-itm-active .mp-updAccount-prg-itm-star {
-  background: $mp-red;
-}
+  background: #de143a; }
 
 .mp-updAccount-prg-itm-active .mp-updAccount-prg-itm-title {
-  color: $mp-red;
-}
+  color: #de143a; }
 
 .mp-updAccount-prg-itm-pic {
   position: relative;
   background: #c6cacb;
   width: 100%;
   height: 1px;
-  margin-top: 27px;
-}
+  margin-top: 27px; }
 
 .mp-updAccount-prg-itm-starMask {
-  position: absolute;
-}
+  position: absolute; }
 
 .mp-updAccount-prg-itm-star {
   width: 23px;
@@ -171,49 +141,46 @@ $mp-foot-h: 60px; //底部高度
   line-height: 27px;
   text-align: center;
   background: #c6cacb;
-  color: #fff;
-}
+  color: #fff; }
 
 .mp-updAccount-prg-itm-starMask,
 .mp-updAccount-prg-itm-star {
   position: absolute;
   top: -13.5px;
   left: 50%;
-  margin-left: -11.5px;
-}
+  margin-left: -11.5px; }
 
 .mp-updAccount-prg-itm-title {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 .mp-updAccount-prg {
   margin-top: 46px;
   margin-bottom: 66px;
   padding-left: 94px;
-  padding-right: 94px;
-}
-.mp-updAccount-prg:after{
+  padding-right: 94px; }
+
+.mp-updAccount-prg:after {
   content: '';
   display: block;
-  clear: both;
-}
-.mp-updAccount-form-gp{
+  clear: both; }
+
+.mp-updAccount-form-gp {
   vertical-align: middle;
   display: table;
-  margin-left:168px;
-  margin-right:auto;
-}
-.mp-updAccount-form-name{
+  margin-left: 168px;
+  margin-right: auto; }
+
+.mp-updAccount-form-name {
   display: inline-block;
   width: 100px;
   text-align: right;
   margin-right: 12px;
-  font-size: 13px;
-}
+  font-size: 13px; }
 
-.mp-updAccount-form-val-ipt{
+.mp-updAccount-form-val-ipt {
   width: 365px;
-  height: 40px;
+  height: 40px; }
 
-}
 /*完善账户信息End*/
+
+/*# sourceMappingURL=frame.css.map */
