@@ -226,4 +226,20 @@ $mp-foot-h: 60px; //底部高度
   _position: absolute;
 }
 
+.mp-updAccount-suc {
+  text-align: center;
+}
+
+.mp-updAccount-suc-isSuc {
+  color: #999;
+  font-size: 14px;
+  margin-top: 12px;
+}
+
+.mp-updAccount-suc-inf {
+  font-size: 13px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
 /*完善账户信息End*/

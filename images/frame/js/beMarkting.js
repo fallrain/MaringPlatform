@@ -16,6 +16,7 @@ var BeMarking = Class.extend({
   },
   url: {},
   initVdt: function(){
+    /*验证信息*/
     this.vdtObj = {};
     this.vdtObj.mktAccntFmVdt = new validate(
       {
@@ -39,14 +40,25 @@ var BeMarking = Class.extend({
     /*页面绑定事件*/
     $('#mktAccntNxt').click(this, this.applyMarketAccount);
   },
-
+  choosePrg: function(num, par){
+    /*控制进度条的进度*/
+    var lis;
+    if(par){
+      lis = $('#' + par).find('.mp-updAccount-prg-itm');
+    }else{
+      lis = $('.mp-updAccount-prg-itm');
+    }
+    lis.removeClass('mp-updAccount-prg-itm-active');
+    $(lis[num - 1]).addClass('mp-updAccount-prg-itm-active');
+  },
   openMktAccnt: function(){
+    /*打开弹出层*/
     layer.open({
       type: 1,
       title: false,
       fix: false,
       closeBtn: 1,
-      skin:'beMkt',
+      skin: 'beMkt',
       area: ['940px', '490px'],
       content: $('#mp-updAccount-prg-main'),
       end: function(){
@@ -55,6 +67,7 @@ var BeMarking = Class.extend({
     });
   },
   applyMarketAccount: function(e){
+    /*提交完善账户信息*/
     var _this = e.data;
     if(_this.vdtObj.mktAccntFmVdt.validateForm()){
       Common.sendFormData(mpUrlsObj.brMkt.applyMarketAccount,
@@ -71,3 +84,4 @@ var BeMarking = Class.extend({
   }
 });
 var beMarking = new BeMarking();
+beMarking.choosePrg(3);

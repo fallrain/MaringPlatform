@@ -182,9 +182,22 @@
   width: 365px;
   height: 40px; }
 
-.b.layui-layer-shade {
+.layui-layer-shade {
   position: absolute;
   _position: absolute; }
+
+.mp-updAccount-suc {
+  text-align: center; }
+
+.mp-updAccount-suc-isSuc {
+  color: #999;
+  font-size: 14px;
+  margin-top: 12px; }
+
+.mp-updAccount-suc-inf {
+  font-size: 13px;
+  margin-top: 25px;
+  margin-bottom: 30px; }
 
 /*完善账户信息End*/
 

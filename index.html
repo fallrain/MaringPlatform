@@ -42,7 +42,7 @@
     <div class="mp-updAccount-prg-main dis-none" id="mp-updAccount-prg-main">
       <p class="mp-updAccount-prg-hd dis-none">成为营销者</p>
       <p class="mp-updAccount-prg-hd">完善账户信息</p>
-      <div class="mp-updAccount-prompt-cnt dis-none1">
+      <div class="mp-updAccount-prompt-cnt dis-none">
         <img src="images/frame/img/account-prg-portrait.png">
         <p class="mp-updAccount-prompt-user">
           <label>海尔账号用户名：</label><label>qw112</label>
@@ -54,7 +54,7 @@
         </button>
         <p class="mp-updAccount-prg-ft">注意： 海尔账号一旦升级为营销者账号，将不能变更。</p>
       </div>
-      <div class="mp-updAccount-form dis-none">
+      <div class="mp-updAccount-form dis-none1" id="mp-updAccount-form">
         <ul class="mp-updAccount-prg">
           <li class="mp-updAccount-prg-itm">
             <p class="mp-updAccount-prg-itm-title">完善海尔账户资料</p>
@@ -78,7 +78,7 @@
             </div>
           </li>
         </ul>
-        <form id="mktAccntFm" name="mktAccntFm">
+        <form class="dis-none" id="mktAccntFm" name="mktAccntFm">
           <div class="mp-updAccount-form-gp mb11 js-vdt-group">
             <label class="mp-updAccount-form-name">部门</label>
             <input class="mp-ipt-text mp-updAccount-form-val-ipt" name="department" type="text">
@@ -97,6 +97,13 @@
             </button>
           </div>
         </form>
+        <div class="mp-updAccount-suc">
+          <img src="images/frame/img/account-suc.png">
+          <p class="mp-updAccount-suc-isSuc">提交成功</p>
+          <p class="mp-updAccount-suc-inf">账户信息补充完成，您的帐号正在审核中，目前还不能操作管理后台，请耐心等待。</p>
+          <button class="mp-updAccount-prg-btn mp-updAccount-prg-btn1" type="button">返回首页
+          </button>
+        </div>
       </div>
     </div>
   </div>
