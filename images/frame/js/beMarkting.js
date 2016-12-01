@@ -59,6 +59,7 @@ var BeMarking = Class.extend({
       fix: false,
       closeBtn: 1,
       skin: 'beMkt',
+      resize: false,
       area: ['940px', '490px'],
       content: $('#mp-updAccount-prg-main'),
       end: function(){

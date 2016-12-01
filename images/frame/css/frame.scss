@@ -221,9 +221,9 @@ $mp-foot-h: 60px; //底部高度
 
 }
 
-.layui-layer-shade {
-  position: absolute;
-  _position: absolute;
+.layui-layer {
+  position: fixed;
+  _position: fixed;
 }
 
 .mp-updAccount-suc {
