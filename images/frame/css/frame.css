@@ -78,7 +78,8 @@
   margin-top: 40px;
   text-align: center; }
 
-.mp-updAccount-prg-btn {
+.mp-updAccount-prg-btn,
+.mp-updAccount-nxt-btn {
   width: 365px;
   height: 40px;
   line-height: 40px;
@@ -86,8 +87,8 @@
   cursor: pointer;
   font-size: 13px; }
 
-.mp-updAccount-prg-btn1 {
-  color: #fff;
+.mp-updAccount-prg-btn1,
+.mp-updAccount-nxt-btn:hover {
   background: #de143a; }
 
 .mp-updAccount-prg-btn1:hover {
@@ -180,6 +181,10 @@
 .mp-updAccount-form-val-ipt {
   width: 365px;
   height: 40px; }
+
+.b.layui-layer-shade {
+  position: absolute;
+  _position: absolute; }
 
 /*完善账户信息End*/
 

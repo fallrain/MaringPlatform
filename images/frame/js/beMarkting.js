@@ -7,6 +7,12 @@ var BeMarking = Class.extend({
     this.openMktAccnt();
     this.initVdt();
     this.bindLis();
+    var gotoLogin = function(){
+      var returnUrl = window.location.href;
+      location.href = "http://heretest.haier.com/ids/cn/haier_login.jsp?returnUrl=" + returnUrl;
+      //location.href = "http://user.haier.com/ids/cn/haier_login.jsp?returnUrl=" + returnUrl;
+    };
+    //gotoLogin();
   },
   url: {},
   initVdt: function(){
@@ -40,7 +46,7 @@ var BeMarking = Class.extend({
       title: false,
       fix: false,
       closeBtn: 1,
-      //fixed:false,
+      skin:'beMkt',
       area: ['940px', '490px'],
       content: $('#mp-updAccount-prg-main'),
       end: function(){
