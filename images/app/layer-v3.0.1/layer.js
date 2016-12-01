@@ -29,7 +29,8 @@
       }
     }, ready: function(e){
       var t = "skinlayercss", i = "1110";
-      return a ? layui.addcss("modules/layer/default/layer.css?v=" + r.v + i, e, t) : r.link("skin/default/layer.css?v=" + r.v + i, e, t), this
+      return  this;
+      //a ? layui.addcss("modules/layer/default/layer.css?v=" + r.v + i, e, t) : r.link("skin/default/layer.css?v=" + r.v + i, e, t),
     }, alert: function(e, t, n){
       var a = "function" == typeof t;
       return a && (n = t), r.open(i.extend({content: e, yes: n}, a ? {} : t))
