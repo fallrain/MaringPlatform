@@ -15,7 +15,7 @@ html #layuicss-skinlayercss {
 }
 
 .layui-layer, .layui-layer-shade {
-  position: fixed;
+  position: absolute;
   _position: absolute;
   pointer-events: auto
 }
