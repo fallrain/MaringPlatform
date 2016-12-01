@@ -6,12 +6,12 @@ var BeMarking = Class.extend({
   init: function(){
     this.openMktAccnt();
     this.initVdt();
+    this.bindLis();
   },
-  url: {
-    applyMarketAccount: Common.domainHead + '/user/applyMarketAccount',
-  },
+  url: {},
   initVdt: function(){
-    var mktAccntFmVdt = new validate(
+    this.vdtObj = {};
+    this.vdtObj.mktAccntFmVdt = new validate(
       {
         formID: 'mktAccntFm',
         onfocusout: true,
@@ -29,6 +29,11 @@ var BeMarking = Class.extend({
         messages: {}
       });
   },
+  bindLis: function(){
+    /*页面绑定事件*/
+    $('#mktAccntNxt').click(this, this.applyMarketAccount);
+  },
+
   openMktAccnt: function(){
     layer.open({
       type: 1,
@@ -43,18 +48,20 @@ var BeMarking = Class.extend({
       }
     });
   },
-  applyMarketAccount: function(){
-    Common.sendFormData(this.url.applyMarketAccount,
-      function(data){
-        if(data.isSuccess){
+  applyMarketAccount: function(e){
+    var _this = e.data;
+    if(_this.vdtObj.mktAccntFmVdt.validateForm()){
+      Common.sendFormData(mpUrlsObj.brMkt.applyMarketAccount,
+        function(data){
+          if(data.isSuccess){
 
-        }else{
-          alert(data.resultMsg);
-        }
-      },
-      {}
-    );
+          }else{
+            alert(data.resultMsg);
+          }
+        },
+        $('#mktAccntFm').serialize()
+      );
+    }
   }
 });
 var beMarking = new BeMarking();
-beMarking.applyMarketAccount();
