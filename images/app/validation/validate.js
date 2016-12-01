@@ -8,15 +8,15 @@ var validate = Class.extend({
 		this.form = $('#'+this.cfg.formID);
 		var cfgObj = {
 			errorElement : 'span',
-			errorClass : 'help-block',
+			errorClass : 'js-help-block',
 			focusInvalid : false,
 			ignore: ".ignore",
 			onsubmit: false,
 			highlight : function(element) {
-				$(element).closest('.common-group').addClass('has-error');
+				$(element).closest('.js-vdt-group').addClass('js-has-error');
 			},
 			success : function(label) {
-				label.closest('.common-group').removeClass('has-error');
+				label.closest('.js-vdt-group').removeClass('js-has-error');
 				label.remove();
 			},
 			errorPlacement : function(error, element) {
@@ -27,7 +27,7 @@ var validate = Class.extend({
 				if(element.context.id=='foundTime'){
 					element.closest('.datepicker').append(error);
 				}*/
-				element.closest('.common-group').append(error);
+				element.closest('.js-vdt-group').append(error);
 			}
 		};
 		if(this.cfg.rules){
@@ -62,13 +62,13 @@ var validate = Class.extend({
 		$('#' + elementID).rules("remove", rule);
 	},
 	resetForm:function(){
-		$('.help-block').remove();
-		$('.has-error').toggleClass('has-error');
+		$('.js-help-block').remove();
+		$('.js-has-error').toggleClass('js-has-error');
 	},
 	resetElement:function(elementID){
-		var elementParent = $('#'+elementID).closest('.common-group')
-		elementParent.removeClass('has-error');
-		elementParent.find('.help-block').remove();
+		var elementParent = $('#'+elementID).closest('.js-vdt-group')
+		elementParent.removeClass('js-has-error');
+		elementParent.find('.js-help-block').remove();
 	}
 });
 

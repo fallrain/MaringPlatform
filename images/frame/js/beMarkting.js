@@ -5,16 +5,36 @@
 var BeMarking = Class.extend({
   init: function(){
     this.openMktAccnt();
+    this.initVdt();
   },
   url: {
     applyMarketAccount: Common.domainHead + '/user/applyMarketAccount',
+  },
+  initVdt: function(){
+    var mktAccntFmVdt = new validate(
+      {
+        formID: 'mktAccntFm',
+        onfocusout: true,
+        rules: {
+          department: {
+            required: true,
+          },
+          realName: {
+            required: true,
+          },
+          idCardNo: {
+            required: true,
+          },
+        },
+        messages: {}
+      });
   },
   openMktAccnt: function(){
     layer.open({
       type: 1,
       title: false,
       fix: false,
-      closeBtn:1,
+      closeBtn: 1,
       //fixed:false,
       area: ['940px', '490px'],
       content: $('#mp-updAccount-prg-main'),
