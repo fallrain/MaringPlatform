@@ -63,7 +63,7 @@ var BeMarking = Class.extend({
       type: 1,
       title: false,
       fix: false,
-      closeBtn: 1,
+      closeBtn: 0,
       skin: 'beMkt',
       resize: false,
       area: ['940px', '490px'],
