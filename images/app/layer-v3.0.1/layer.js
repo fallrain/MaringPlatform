@@ -28,7 +28,7 @@
         }()
       }
     }, ready: function(e){
-      var t = "skinlayercss", i = "1110";
+      var t = "skinlayercss", i = "1110"; 
       return  this;
       //a ? layui.addcss("modules/layer/default/layer.css?v=" + r.v + i, e, t) : r.link("skin/default/layer.css?v=" + r.v + i, e, t),
     }, alert: function(e, t, n){
