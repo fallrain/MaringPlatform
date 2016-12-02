@@ -9,8 +9,7 @@ var BeMarking = Class.extend({
     this.bindLis();
     var gotoLogin = function(){
       var returnUrl = window.location.href;
-      location.href = "http://heretest.haier.com/ids/cn/haier_login.jsp?returnUrl=" + returnUrl;
-      //location.href = "http://user.haier.com/ids/cn/haier_login.jsp?returnUrl=" + returnUrl;
+      location.href = "http://tuser.haier.com/ids/cn/haier_login.jsp?returnUrl=" + returnUrl;
     };
     //gotoLogin();
   },
@@ -50,6 +49,13 @@ var BeMarking = Class.extend({
     }
     lis.removeClass('mp-updAccount-prg-itm-active');
     $(lis[num - 1]).addClass('mp-updAccount-prg-itm-active');
+    $('.js-prg').hide();
+    //本层的显示
+    $('.js-prg-' + num).show();
+    //低层+的也都显示
+    for(var i = 0; i <= num; i++){
+      $('.js-prg-' + i + 'more').show();
+    }
   },
   openMktAccnt: function(){
     /*打开弹出层*/
@@ -82,7 +88,19 @@ var BeMarking = Class.extend({
         $('#mktAccntFm').serialize()
       );
     }
+  },
+  queryUser: function(){
+    Common.sendFormData(mpUrlsObj.brMkt.queryUser,
+      function(data){
+        if(data.isSuccess){
+
+        }else{
+          alert(data.resultMsg);
+        }
+      }
+    );
   }
 });
 var beMarking = new BeMarking();
-beMarking.choosePrg(3);
+beMarking.choosePrg(2);
+beMarking.queryUser();

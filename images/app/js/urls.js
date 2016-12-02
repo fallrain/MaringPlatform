@@ -4,6 +4,7 @@
  */
 var mpUrlsObj = {
   brMkt: {
-    applyMarketAccount: Common.domainHead + '/user/applyMarketAccount',
+    applyMarketAccount: Common.domainHead + 'ad/user/applyMarketAccount',
+    queryUser: Common.domainHead + 'common/queryUser',
   }
 };
