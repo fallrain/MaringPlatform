@@ -8,6 +8,7 @@ var BeMarking = Class.extend({
     this.bindLis();
   },
   url: {},
+  selfObj: {},
   initVdt: function(){
     /*验证信息*/
     this.vdtObj = {};
@@ -53,7 +54,7 @@ var BeMarking = Class.extend({
   },
   openMktAccnt: function(){
     /*打开弹出层*/
-    layer.open({
+    this.selfObj.MktAccntDg = layer.open({
       type: 1,
       title: false,
       fix: false,
@@ -141,6 +142,8 @@ var BeMarking = Class.extend({
             };
           }
         }else{
+          //错误关闭对话框
+          layer.close(_this.selfObj.MktAccntDg);
           var loginUrl = data.data.loginUrl;
           var returnUrl = window.location.href;
           location.href = loginUrl + "?returnUrl=" + returnUrl;
