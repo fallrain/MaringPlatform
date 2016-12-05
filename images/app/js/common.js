@@ -80,7 +80,7 @@
       num = "" + num;
     }
     return num;
-  }
+  };
   var parseDate = function(date){
     var obj = {
       year: date.getFullYear(),
@@ -93,7 +93,6 @@
     return obj;
   };
   window.Common = {
-    domainHead: 'http://heretest.haier.com/',
     get: function(str, domain){
       domain = domain || window.document;
       return domain.getElementById(str);
@@ -114,7 +113,10 @@
           completeFn();
         },
         success: successFn,
-        error: errorFn,
+        error: function(){
+          layer.close(loader);
+          errorFn();
+        },
         callBack: callBack
       }, options));
     },
