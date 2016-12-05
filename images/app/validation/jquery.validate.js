@@ -309,7 +309,7 @@ $.extend( $.validator, {
 		$.extend( $.validator.defaults, settings );
 	},
 
-	messages: {
+	messages: { 
 		required: "不能为空",
 		remote: "Please fix this field.",
 		email: "Please enter a valid email address.",

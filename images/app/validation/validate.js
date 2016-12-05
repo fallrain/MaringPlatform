@@ -66,9 +66,9 @@ var validate = Class.extend({
 		$('.js-has-error').toggleClass('js-has-error');
 	},
 	resetElement:function(elementID){
-		var elementParent = $('#'+elementID).closest('.js-vdt-group')
+		var elementParent = $('#'+elementID).closest('.js-vdt-group');
 		elementParent.removeClass('js-has-error');
-		elementParent.find('.js-help-block').remove();
+		elementParent.find('.js-help-block').remove(); 
 	}
 });
 
