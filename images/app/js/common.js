@@ -99,7 +99,7 @@
       return domain.getElementById(str);
     },
     sendFormData: function(url, callBack, data, options){
-      var loader = layer.load(1, {
+      var loader = layer.load(2, {
         shade: [0.1, '#fff'] //0.1透明度的白色背景
       });
       options = options || {};
