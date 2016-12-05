@@ -99,6 +99,9 @@
       return domain.getElementById(str);
     },
     sendFormData: function(url, callBack, data, options){
+      var loader = layer.load(1, {
+        shade: [0.1, '#fff'] //0.1透明度的白色背景
+      });
       options = options || {};
       $.ajax($.extend({
         url: url,
@@ -106,7 +109,10 @@
         async: true,
         data: data,
         beforeSend: beforeSendFn,
-        complete: completeFn,
+        complete: function(){
+          layer.close(loader);
+          completeFn();
+        },
         success: successFn,
         error: errorFn,
         callBack: callBack
