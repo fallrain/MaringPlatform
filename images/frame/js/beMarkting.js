@@ -6,6 +6,7 @@ var BeMarking = Class.extend({
   init: function(){
     this.initVdt();
     this.bindLis();
+    this.choosePrg(0);
   },
   url: {},
   selfObj: {},
@@ -165,5 +166,4 @@ var BeMarking = Class.extend({
   }
 });
 var beMarking = new BeMarking();
-beMarking.choosePrg(0);
 beMarking.queryUser();
