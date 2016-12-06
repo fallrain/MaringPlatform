@@ -20,16 +20,25 @@ var BeMarking = Class.extend({
         rules: {
           department: {
             required: true,
+            maxlength: 50
           },
           realName: {
             required: true,
+            maxlength: 50
           },
           idCardNo: {
             required: true,
             isIdCardNo: true,
           },
         },
-        messages: {}
+        messages: {
+          department: {
+            maxlength: '最大长度为50'
+          },
+          realName: {
+            maxlength: '最大长度为50'
+          }
+        }
       });
   },
   bindLis: function(){
