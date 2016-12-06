@@ -203,6 +203,11 @@
   height: auto;
   font-size: 24px; }
 
+/*.layui-layer-ico16, .layui-layer-loading .layui-layer-loading2 {
+  width: 49px;
+  height: 49px;
+  background: url(../../app/img/frame-load.gif) no-repeat;
+}*/
 /*完善账户信息End*/
 
 /*# sourceMappingURL=frame.css.map */
