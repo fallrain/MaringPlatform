@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Fri Dec  2 17:33:49 2016
+Created by FontForge 20120731 at Wed Dec  7 15:10:17 2016
  By admin
 </metadata>
 <defs>
@@ -37,5 +37,7 @@ t-29.5 0.5h-32l-45 128h-439l-44 -128h-29h-34q-20 0 -45 1q-25 0 -41 9.5t-25.5 23t
 t9.5 -10.5t21.5 -4h37h67h81h80h64h36q23 0 34 12t2 38q-5 13 -9.5 30.5t-9.5 34.5q-5 19 -11 39h-368zM336 498v228q0 11 2.5 23t10 21.5t20.5 15.5t34 6h188q31 0 51.5 -14.5t20.5 -52.5v-227h-327z" />
     <glyph glyph-name="close" unicode="&#xe69a;" 
 d="M177 79q-6 -7 -6 -15.5t6.5 -14.5t15 -6t14.5 6l619 640q6 7 6 15.5t-6.5 14.5t-15.5 6t-15 -6zM795 49q6 -6 15 -6t15.5 6t6.5 14.5t-6 15.5l-619 640q-6 6 -14.5 6t-15 -6t-6.5 -14.5t6 -15.5z" />
+    <glyph glyph-name="duihao" unicode="&#xe624;" horiz-adv-x="1195" 
+d="M247 364q-6 6 -6 15t6 15t15 6t15 -6l207 -202l433 448q6 6 15 6.5t15.5 -6t6.5 -15t-6 -15.5l-463 -479z" />
   </font>
 </defs></svg>

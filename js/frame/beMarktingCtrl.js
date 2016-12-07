@@ -7,5 +7,6 @@ define(
   function(BeMarkting){
     var beMarkting = new BeMarkting();
     beMarkting.queryUser();
+    beMarkting.choosePrg(2)
   }
 );

@@ -141,7 +141,8 @@
   line-height: 27px;
   text-align: center;
   background: #c6cacb;
-  color: #fff; }
+  color: #fff;
+  font-size: 15px; }
 
 .mp-updAccount-prg-itm-starMask,
 .mp-updAccount-prg-itm-star {
