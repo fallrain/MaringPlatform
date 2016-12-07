@@ -6,24 +6,25 @@
 require.config({
   baseUrl: './',
   paths: {
-    'jQuery': 'js/app/jquery-1.11.0',
+    'jquery': 'js/app/jquery-1.11.0',
     'Common': 'js/app/common',
     'layer': 'js/layer-v3.0.1/layer',
     'jquery.validate': 'js/validation/jquery.validate',
     'validate': 'js/validation/validate',
     'urls': 'js/app/urls',
-    'beMarkting': 'js/frame/beMarkting',
+    'BeMarkting': 'js/frame/beMarkting',
+    'beMarktingCtrl': 'js/frame/beMarktingCtrl',
   },
   shim: {
     'Common': {
-      deps: ['jQuery'],
+      deps: ['jquery'],
       exports: 'Common'
     },
     'layer': {
-      deps: ['jQuery']
+      deps: ['jquery']
     },
     'jquery.validate': {
-      deps: ['jQuery']
+      deps: ['jquery']
     },
     'validate': {
       deps: ['Common', 'jquery.validate'],
@@ -32,17 +33,14 @@ require.config({
     'urls': {
       exports: 'urls'
     },
-    'beMarkting': {
-      deps: ['Common', 'validate'],
-    }
   }
 });
 require([
-  'jQuery',
+  'jquery',
   'Common',
   'layer',
   'jquery.validate',
   'validate',
   'urls',
-  'beMarkting'
+  'beMarktingCtrl'
 ]);
