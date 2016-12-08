@@ -18,5 +18,7 @@
 
 .icon-close:before { content: "\e69a"; }
 
+.icon-user:before { content: "\e900"; }
+
 .icon-duihao:before { content: "\e624"; }
 

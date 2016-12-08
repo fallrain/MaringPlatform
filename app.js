@@ -12,8 +12,8 @@ require.config({
     'jquery.validate': 'js/validation/jquery.validate',
     'validate': 'js/validation/validate',
     'urls': 'js/app/urls',
-    'BeMarkting': 'js/frame/beMarkting',
-    'beMarktingCtrl': 'js/frame/beMarktingCtrl',
+    'BeMarketing': 'js/frame/beMarketing',
+    'beMarketingCtrl': 'js/frame/beMarketingCtrl',
   },
   shim: {
     'Common': {
@@ -42,5 +42,5 @@ require([
   'jquery.validate',
   'validate',
   'urls',
-  'beMarktingCtrl'
+  'beMarketingCtrl'
 ]);

@@ -2,10 +2,10 @@
  * 说明：登录页js
  * Created by wangguangkai on 2016/11/29.
  */
-define('BeMarkting',
+define('BeMarketing',
   ['jquery', 'Common', 'validate'],
   function($, Common, validate){
-    var BeMarkting = Class.extend({
+    var BeMarketing = Class.extend({
       init: function(){
         this.initVdt();
         this.bindLis();
@@ -177,6 +177,6 @@ define('BeMarkting',
         );
       }
     });
-    return BeMarkting;
+    return BeMarketing;
   });
 
