@@ -12,7 +12,15 @@
 .mb20 {
   margin-bottom: 20px; }
 
+.mb26 {
+  margin-bottom: 26px; }
+
 /*marin End*/
+/*padding*/
+.pl17 {
+  padding-left: 17px; }
+
+/*padding End*/
 .mp-ipt-text {
   border: 1px solid #c6cacb;
   padding-left: 5px;

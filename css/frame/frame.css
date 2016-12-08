@@ -48,6 +48,9 @@
   padding-top: 34px;
   padding-bottom: 21px; }
 
+.mp-cnt {
+  position: relative; }
+
 .mp-foot {
   position: fixed;
   bottom: 0;
@@ -216,6 +219,7 @@
 /*完善账户信息End*/
 /*左侧菜单*/
 .mu-main {
+  position: absolute;
   width: 207px;
   background: #fff; }
 
@@ -270,9 +274,100 @@
 /*左侧菜单End*/
 /*右侧主体*/
 .mp-r-main {
-  width: 100%;
-  border: 1px solid #e5e5e5; }
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 227px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  min-height: 100%; }
+
+.mp-cm-ttl {
+  height: 63px;
+  line-height: 63px;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 18px;
+  color: #333;
+  padding-left: 30px; }
+
+.mp-cm-cnt-pd {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 39px; }
+
+.mp-cm-grid {
+  width: 100%; }
+
+.mp-cm-grid table {
+  width: 100%; }
+
+.mp-cm-grid tr {
+  border: 1px solid #d5d9e1; }
+
+.mp-cm-grid tbody tr {
+  height: 52px; }
+
+.mp-cm-grid th,
+.mp-cm-grid td {
+  text-align: left;
+  padding-left: 10px; }
+
+.mp-cm-grid th {
+  font-size: 14px;
+  color: #1b2129; }
+
+.mp-cm-grid td {
+  font-size: 12px;
+  color: #666; }
+
+.mp-cm-grid th {
+  height: 34px;
+  line-height: 34px;
+  background: #f6f8fa; }
+
+.mp-cm-grid tbody tr:nth-child(even) td {
+  background: #f9fafb; }
 
 /*右侧主体End*/
+/*页码栏*/
+.mp-pagination {
+  font-size: 14px;
+  color: #666;
+  text-align: right; }
+
+.mp-pagination > * {
+  margin-right: 8px; }
+
+.mp-pagination-num,
+.mp-pagination-btn {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background: #f6f6f6;
+  text-align: center; }
+
+.mp-pagination-pd {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+.mp-pagination-num {
+  width: 32px; }
+
+.mp-pagination-btn {
+  width: 68px;
+  border: 1px solid #e5e5e5;
+  background: #f6f6f6;
+  color: #cfcfcf;
+  cursor: pointer; }
+
+.mp-pagination .active {
+  background: #e2202d;
+  color: #fff; }
+
+.mp-cm-grid .mp-cm-grid-opt {
+  color: #37b0f7; }
+
+/*页码栏End*/
 
 /*# sourceMappingURL=frame.css.map */

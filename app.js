@@ -42,5 +42,5 @@ require([
   'jquery.validate',
   'validate',
   'urls',
-  'beMarketingCtrl'
+  //'beMarketingCtrl'
 ]);

@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import '../app/common-variable';
+//mp-resource-niche
+.mp-resn-count-ttl {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #f6f6f6;
+  padding-left: 17px;
+  font-size: 14px;
+  color: #333;
+}
+
+.mp-resn-tm-sch {
+  text-align: center;
+}
+
+.mp-resn-tm-sch-pd {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.mp-resn-tm-sch-btn {
+  width: 60px;
+  height: 38px;
+  line-height: 38px;
+  background: #e2202d;
+  color: #fff;
+}
+
+.mp-resn-tm-sch-ipt {
+  width: 200px;
+  height: 38px;
+  border: 1px solid $mp-bd-color;
+  margin-right: 12px;
+}
+.mp-resn-tm-sch-inf{
+  color: #333;
+  margin-right: 26px;
+}
+//incomNum:income number
+.mp-resn-incomNum {
+  width: 100%;
+  border-top: 1px solid $mp-bd-color;
+  border-bottom: 1px solid $mp-bd-color;
+  text-align: center;
+}
+
+.mp-resn-incomNum:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.mp-resn-incomNum-pd {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.mp-resn-incomNum-l,
+.mp-resn-incomNum-r {
+  float: left;
+  width: 50%;
+  font-size: 48px;
+}
+
+.mp-resn-incomNum-l {
+  border-right: 1px solid $mp-bd-color;
+  color: #37b0f7;
+}
+
+.mp-resn-incomNum-r {
+  color: #e2202d;
+}
+
+.mp-resn-incomNum-l-inf {
+  font-size: 14px;
+  color: #999;
+}

@@ -1,8 +1,6 @@
 @charset "UTF-8";
-$mp-head-h: 80px; //头部高度
-$mp-red: #de143a; //主题红色色值
-$mp-red-active: #cc1437; //主题红色获取到焦点色值
-$mp-hdft-pl: 100px; //头部和底部左右padding
+@import "../app/common-variable";
+
 .mp-main {
   position: absolute;
   width: 100%;
@@ -60,7 +58,10 @@ $mp-hdft-pl: 100px; //头部和底部左右padding
   padding-bottom: 21px;
 }
 
-$mp-foot-h: 60px; //底部高度
+.mp-cnt {
+  position: relative;
+}
+
 .mp-foot {
   position: fixed;
   bottom: 0;
@@ -262,6 +263,7 @@ $mp-foot-h: 60px; //底部高度
 /*左侧菜单*/
 //menu-main
 .mu-main {
+  position: absolute;
   width: 207px;
   background: #fff;
 }
@@ -276,10 +278,9 @@ $mp-foot-h: 60px; //底部高度
   text-align: center;
 }
 
-$mu-bd-color: #e5e5e5;
 .mu-itm-main {
   width: 100%;
-  border: 1px solid $mu-bd-color;
+  border: 1px solid $mp-bd-color;
 }
 
 .mu-itm {
@@ -312,7 +313,7 @@ $mu-bd-color: #e5e5e5;
 .mu-itm-line {
   width: 159px;
   height: 1px;
-  background: $mu-bd-color;
+  background: $mp-bd-color;
   margin: auto;
 }
 
@@ -328,11 +329,128 @@ $mu-bd-color: #e5e5e5;
 
 /*右侧主体*/
 .mp-r-main {
-  width: 100%;
-  border: 1px solid $mu-bd-color;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 227px;
+  border: 1px solid $mp-bd-color;
+  background: #fff;
+  min-height: 100%;
 }
-//maring
-.mp-cm-ttl{
+
+//markrting-common-title
+$mp-cm-ttl-h: 63px;
+.mp-cm-ttl {
+  height: $mp-cm-ttl-h;
+  line-height: $mp-cm-ttl-h;
+  border-bottom: 1px solid $mp-bd-color;
+  font-size: 18px;
+  color: #333;
+  padding-left: 30px;
+}
+
+.mp-cm-cnt {
 
 }
+
+.mp-cm-cnt-pd {
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 11px;
+  padding-bottom: 39px;
+}
+
+.mp-cm-grid {
+  width: 100%;
+}
+
+.mp-cm-grid table {
+  width: 100%;
+}
+
+.mp-cm-grid tr {
+  border: 1px solid #d5d9e1;
+}
+
+.mp-cm-grid tbody tr {
+  height: 52px;
+}
+
+.mp-cm-grid th,
+.mp-cm-grid td {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.mp-cm-grid th {
+  font-size: 14px;
+  color: #1b2129;
+}
+
+.mp-cm-grid td {
+  font-size: 12px;
+  color: #666;
+}
+
+.mp-cm-grid th {
+  height: 34px;
+  line-height: 34px;
+  background: #f6f8fa;
+}
+
+.mp-cm-grid tbody tr:nth-child(even) td {
+  background: #f9fafb;
+}
+
 /*右侧主体End*/
+/*页码栏*/
+.mp-pagination {
+  font-size: 14px;
+  color: #666;
+  text-align: right;
+}
+
+.mp-pagination > * {
+  margin-right: 8px;
+}
+
+.mp-pagination-num,
+.mp-pagination-btn {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  background: #f6f6f6;
+  text-align: center;
+}
+
+.mp-pagination-pd {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mp-pagination-num {
+  width: 32px;
+}
+
+.mp-pagination-btn {
+  width: 68px;
+  border: 1px solid $mp-bd-color;
+  background: #f6f6f6;
+  color: #cfcfcf;
+  cursor: pointer;
+}
+
+.mp-pagination-pre {
+
+}
+
+.mp-pagination .active {
+  background: #e2202d;
+  color: #fff;
+}
+
+.mp-cm-grid .mp-cm-grid-opt {
+  color: #37b0f7;
+}
+
+/*页码栏End*/
