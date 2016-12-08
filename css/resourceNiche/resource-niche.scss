@@ -34,10 +34,12 @@
   border: 1px solid $mp-bd-color;
   margin-right: 12px;
 }
-.mp-resn-tm-sch-inf{
+
+.mp-resn-tm-sch-inf {
   color: #333;
   margin-right: 26px;
 }
+
 //incomNum:income number
 .mp-resn-incomNum {
   width: 100%;
@@ -76,4 +78,31 @@
 .mp-resn-incomNum-l-inf {
   font-size: 14px;
   color: #999;
+}
+
+.mp-resn-chosRes-btn {
+  width: 116px;
+  height: 38px;
+}
+
+.mp-resn-sch-gp {
+  width: 260px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid $mp-bd-color;
+  font-size: 13px;
+}
+
+.mp-resn-sch-gp-ipt {
+  border: none;
+  height: 100%;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mp-resn-sch-icon {
+  color: #c8cccd;
+  float: right;
+  margin-right: 10px;
 }

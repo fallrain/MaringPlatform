@@ -32,5 +32,12 @@
   color: #a94442; }
 
 /*验证End*/
+/*按钮*/
+.mp-resn-btn {
+  background: #e2202d;
+  color: #fff;
+  cursor: pointer; }
+
+/*按钮 End*/
 
 /*# sourceMappingURL=common.css.map */
