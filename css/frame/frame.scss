@@ -356,8 +356,8 @@ $mp-cm-ttl-h: 63px;
 .mp-cm-cnt-pd {
   padding-left: 12px;
   padding-right: 12px;
-  padding-top: 11px;
-  padding-bottom: 39px;
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 .mp-cm-grid {
@@ -455,3 +455,39 @@ $mp-cm-ttl-h: 63px;
 }
 
 /*页码栏End*/
+
+/*表单*/
+//用table是为了方便垂直居中
+.mp-form-gp {
+  display: table;
+}
+
+.mp-form-gp:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.mp-form-name,
+.mp-form-val {
+  //float: left;
+  display: table-cell;
+}
+
+.mp-form-name {
+  text-align: right;
+  padding-right: 20px;
+  color: #666;
+}
+
+//输入框很高的情况，就不能用居中了
+.mp-form-name-difHt {
+  vertical-align: top;
+  padding-top: 8px;
+}
+
+.mp-ta {
+  border: 1px solid $mp-bd-color;
+}
+
+/*表单 End*/

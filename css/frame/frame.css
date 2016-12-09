@@ -293,8 +293,8 @@
 .mp-cm-cnt-pd {
   padding-left: 12px;
   padding-right: 12px;
-  padding-top: 11px;
-  padding-bottom: 39px; }
+  padding-top: 10px;
+  padding-bottom: 40px; }
 
 .mp-cm-grid {
   width: 100%; }
@@ -370,5 +370,31 @@
   color: #37b0f7; }
 
 /*页码栏End*/
+/*表单*/
+.mp-form-gp {
+  display: table; }
+
+.mp-form-gp:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.mp-form-name,
+.mp-form-val {
+  display: table-cell; }
+
+.mp-form-name {
+  text-align: right;
+  padding-right: 20px;
+  color: #666; }
+
+.mp-form-name-difHt {
+  vertical-align: top;
+  padding-top: 8px; }
+
+.mp-ta {
+  border: 1px solid #e5e5e5; }
+
+/*表单 End*/
 
 /*# sourceMappingURL=frame.css.map */

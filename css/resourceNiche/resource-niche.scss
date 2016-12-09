@@ -106,3 +106,30 @@
   float: right;
   margin-right: 10px;
 }
+
+/*编辑媒体平台*/
+//medp:MediaPlatform
+.mp-resn-medp-ipt {
+  width: 360px;
+  height: 38px;
+  border: 1px solid $mp-bd-color;
+}
+
+.mp-resn-medp-form {
+
+}
+
+.mp-resn-medp-form .mp-form-name {
+  width: 110px;
+}
+
+.mp-resn-medp-form-pd {
+  padding-top: 30px;
+}
+
+.mp-resn-medp-ta {
+  width: 700px;
+  height: 100px;
+}
+
+/*编辑媒体平台End*/

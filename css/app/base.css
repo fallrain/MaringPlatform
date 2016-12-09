@@ -75,7 +75,7 @@ button:focus, input:focus, textarea:focus {
 :focus {
   outline: 0; }
 
-input {
+input[type='text'] {
   padding-left: 10px; }
 
 label i, label span, ul li {
@@ -104,6 +104,10 @@ html input[disabled] {
   cursor: default; }
 
 textarea {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   overflow: auto;
   resize: none; }
 
