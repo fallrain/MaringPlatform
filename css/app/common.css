@@ -1,7 +1,13 @@
 @charset "UTF-8";
 /*marin*/
+.mr10 {
+  margin-right: 10px; }
+
 .mr20 {
   margin-right: 20px; }
+
+.mr30 {
+  margin-right: 30px; }
 
 .mr40 {
   margin-right: 40px; }
@@ -31,9 +37,20 @@
 .w90 {
   width: 90px; }
 
+.w100 {
+  width: 100px; }
+
+.w175 {
+  width: 175px; }
+
 /*宽度width End*/
+/*高度 height*/
+.h38 {
+  height: 38px; }
+
+/*高度 height End*/
 .mp-ipt-text {
-  border: 1px solid #c6cacb;
+  border: 1px solid #e5e5e5;
   padding-left: 5px;
   padding-right: 5px; }
 
@@ -49,6 +66,55 @@
   color: #fff;
   cursor: pointer; }
 
+.mp-resn-btn:hover {
+  background: #cc1437; }
+
+.mp-resn-btn1 {
+  background: #fff;
+  color: #e2202d;
+  cursor: pointer;
+  border: 1px solid #e2202d; }
+
+.mp-resn-btn1:hover {
+  color: #cc1437;
+  border: 1px solid #cc1437; }
+
 /*按钮 End*/
+/*修饰*/
+.require-mark:before {
+  content: '*';
+  display: inline;
+  color: #de143a;
+  margin-right: 4px; }
+
+/*修饰 End*/
+/*多选框*/
+.mp-ckgp {
+  height: 38px;
+  line-height: 38px; }
+
+.mp-ck-par {
+  margin-right: 16px;
+  cursor: pointer; }
+
+.mp-ckgp-ck {
+  vertical-align: middle;
+  margin-right: 6px; }
+
+/*多选框End*/
+/*单选框*/
+.mp-rdgp {
+  height: 38px;
+  line-height: 38px; }
+
+.mp-rd-par {
+  margin-right: 16px;
+  cursor: pointer; }
+
+.mp-rdgp-rd {
+  vertical-align: middle;
+  margin-right: 6px; }
+
+/*单选框End*/
 
 /*# sourceMappingURL=common.css.map */

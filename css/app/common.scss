@@ -1,7 +1,16 @@
 @charset "UTF-8";
+@import "common-variable";
 /*marin*/
+.mr10 {
+  margin-right: 10px;
+}
+
 .mr20 {
   margin-right: 20px;
+}
+
+.mr30 {
+  margin-right: 30px;
 }
 
 .mr40 {
@@ -41,11 +50,25 @@
   width: 90px;
 }
 
+.w100 {
+  width: 100px;
+}
+
+.w175 {
+  width: 175px;
+}
+
 /*宽度width End*/
 
-$mp-ipt-color: #c6cacb;
+/*高度 height*/
+.h38 {
+  height: 38px;
+}
+
+/*高度 height End*/
+
 .mp-ipt-text {
-  border: 1px solid $mp-ipt-color;
+  border: 1px solid $mp-bd-color;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -60,9 +83,71 @@ $mp-ipt-color: #c6cacb;
 
 /*按钮*/
 .mp-resn-btn {
-  background: #e2202d;
+  background: $btn-bg;
   color: #fff;
-  cursor: pointer;;
+  cursor: pointer;
+}
+
+.mp-resn-btn:hover {
+  background: $mp-red-active;
+}
+
+.mp-resn-btn1 {
+  background: #fff;
+  color: $btn-bg;
+  cursor: pointer;
+  border: 1px solid $btn-bg;
+}
+
+.mp-resn-btn1:hover {
+  color: $mp-red-active;
+  border: 1px solid $mp-red-active;
 }
 
 /*按钮 End*/
+
+/*修饰*/
+.require-mark:before {
+  content: '*';
+  display: inline;
+  color: $mp-red;
+  margin-right: 4px;
+}
+
+/*修饰 End*/
+
+/*多选框*/
+.mp-ckgp {
+  height: 38px;
+  line-height: 38px;
+}
+
+.mp-ck-par {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.mp-ckgp-ck {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/*多选框End*/
+
+/*单选框*/
+.mp-rdgp {
+  height: 38px;
+  line-height: 38px;
+}
+
+.mp-rd-par {
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.mp-rdgp-rd {
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+/*单选框End*/

@@ -75,56 +75,106 @@
       </div>
       <div class="mp-r-main">
         <div class="mp-cm-ttl">
-          媒体管理
+          新增资源位
         </div>
         <div class="mp-cm-cnt mp-cm-cnt-pd">
-          <div class="mp-form mp-resn-medp-form mp-resn-medp-form-pd">
+          <div class="mp-form mp-resn-editResn-form mp-resn-medp-form-pd">
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name">平台名称</label>
+              <label class="mp-form-name require-mark">平台名称</label>
               <div class="mp-form-val">
                 <input class="mp-resn-medp-ipt" type="text">
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name">平台域名</label>
+              <label class="mp-form-name require-mark">创意类型</label>
+              <div class="mp-form-val">
+                <div class="mp-ckgp">
+                  <label class="mp-ck-par">
+                    <input class="mp-ckgp-ck" type="checkbox" name="cylx">图片
+                  </label>
+                  <label class="mp-ck-par">
+                    <input class="mp-ckgp-ck" type="checkbox" name="cylx">文字
+                  </label>
+                  <label class="mp-ck-par">
+                    <input class="mp-ckgp-ck" type="checkbox" name="cylx">图文
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mp-form-gp mb10">
+              <label class="mp-form-name require-mark">位置概述</label>
               <div class="mp-form-val">
                 <input class="mp-resn-medp-ipt" type="text">
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name">媒体类型</label>
+              <label class="mp-form-name require-mark">资源位比例</label>
+              <div class="mp-form-val">
+                <div class="mp-rdgp">
+                  <label class="mp-rd-par">
+                    <input class="mp-rdgp-rd" type="radio" name="zywbl">1:1
+                  </label>
+                  <label class="mp-rd-par">
+                    <input class="mp-rdgp-rd" type="radio" name="zywbl">2:1
+                  </label>
+                  <label class="mp-rd-par">
+                    <input class="mp-rdgp-rd" type="radio" name="zywbl">3:2
+                  </label>
+                  <label class="mp-rd-par">
+                    <input class="mp-rdgp-rd" type="radio" name="zywbl">3:4
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="mp-form-gp mb10">
+              <label class="mp-form-name">资源位尺寸</label>
               <div class="mp-form-val">
                 <input class="mp-resn-medp-ipt" type="text">
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name">行业类型</label>
+              <label class="mp-form-name">&nbsp;</label>
+              <div class="mp-form-val">
+                <input class="mp-ipt-text w175 h38 mr10" placeholder="宽" type="text">
+                <input class="mp-ipt-text w175 h38" placeholder="高" type="text">
+              </div>
+            </div>
+            <div class="mp-form-gp mb10">
+              <label class="mp-form-name mp-form-name-difHt">上传示意图</label>
+              <div class="mp-form-val">
+                <div class="mp-form-upArea iconfont icon-jia"></div>
+              </div>
+            </div>
+            <div class="mp-form-gp mb10">
+              <label class="mp-form-name require-mark">链接展示</label>
               <div class="mp-form-val">
                 <input class="mp-resn-medp-ipt" type="text">
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name">设备类型</label>
+              <label class="mp-form-name require-mark">展示费用</label>
               <div class="mp-form-val">
-                <input class="mp-resn-medp-ipt" type="text">
+                <input class="mp-resn-medp-ipt mr10" type="text">元/天
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name">备案号</label>
+              <label class="mp-form-name require-mark">资源位内容展示形式</label>
               <div class="mp-form-val">
-                <input class="mp-resn-medp-ipt" type="text">
-              </div>
-            </div>
-            <div class="mp-form-gp mb10">
-              <label class="mp-form-name mp-form-name-difHt">媒体描述</label>
-              <div class="mp-form-val">
-                <textarea class="mp-ta mp-resn-medp-ta"></textarea>
+                <div class="mp-rdgp">
+                  <label class="mp-rd-par mr30">
+                    <input class="mp-rdgp-rd" type="radio" name="zywbl">自主实现
+                  </label>
+                  <label class="mp-rd-par">
+                    <input class="mp-rdgp-rd" type="radio" name="zywbl">全委代实现
+                  </label>
+                </div>
               </div>
             </div>
             <div class="mp-form-gp mb10">
               <label class="mp-form-name mp-form-name-difHt">&nbsp;</label>
               <div class="mp-form-val">
-                <button class="mp-resn-btn mp-resn-chosRes-btn" type="button">完成</button>
+                <button class="mp-resn-btn mp-resn-chosRes-btn mr10" type="button">完成</button>
+                <button class="mp-resn-btn1 w100 h38" type="button">继续增加</button>
               </div>
             </div>
           </div>
