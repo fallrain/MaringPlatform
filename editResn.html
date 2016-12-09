@@ -102,7 +102,16 @@
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name require-mark">位置概述</label>
+              <label class="mp-form-name require-mark pos-rl">
+                位置概述
+                <span class="mp-resn-editResn-hovinf">
+                  <i class="iconfont icon-wenhao "></i>
+                  <div class="mp-resn-editResn-hovinf-tip dis-none js-tps">
+                    <div class="arrow"></div>
+                    <div class="tipContent">所在页面的位置描述，例如：首页主视觉banner第一帧</div>
+                  </div>
+                </span>
+              </label>
               <div class="mp-form-val">
                 <input class="mp-resn-medp-ipt" type="text">
               </div>
@@ -140,13 +149,31 @@
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name mp-form-name-difHt">上传示意图</label>
+              <label class="mp-form-name mp-form-name-difHt">
+                上传示意图
+                 <span class="mp-resn-editResn-hovinf">
+                  <i class="iconfont icon-wenhao "></i>
+                  <div class="mp-resn-editResn-hovinf-tip dis-none js-tps">
+                    <div class="arrow"></div>
+                    <div class="tipContent">所在页面的位置描述，例如：首页主视觉banner第一帧</div>
+                  </div>
+                </span>
+              </label>
               <div class="mp-form-val">
                 <div class="mp-form-upArea iconfont icon-jia"></div>
               </div>
             </div>
             <div class="mp-form-gp mb10">
-              <label class="mp-form-name require-mark">链接展示</label>
+              <label class="mp-form-name require-mark">
+                链接展示
+                 <span class="mp-resn-editResn-hovinf">
+                  <i class="iconfont icon-wenhao "></i>
+                  <div class="mp-resn-editResn-hovinf-tip dis-none js-tps">
+                    <div class="arrow"></div>
+                    <div class="tipContent">所在页面的位置描述，例如：首页主视觉banner第一帧</div>
+                  </div>
+                </span>
+              </label>
               <div class="mp-form-val">
                 <input class="mp-resn-medp-ipt" type="text">
               </div>
@@ -195,5 +222,14 @@
   </div>
 </div>
 <script src="js/app/require.js" data-main="app.js"></script>
+<script src="js/app/jquery-1.11.0.js"></script>
+<script>
+  $('.mp-resn-editResn-hovinf').on('mouseover', function(){
+    $(this).find('.js-tps').show();
+  });
+  $('.mp-resn-editResn-hovinf').on('mouseout', function(){
+    $(this).find('.js-tps').hide();
+  });
+</script>
 </body>
 </html>

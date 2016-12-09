@@ -141,6 +141,7 @@
 
 .mp-resn-editResn-form .mp-form-name {
   width: 164px;
+  padding-right: 34px;
 }
 
 .mp-resn-editResn-form-pd {
@@ -156,6 +157,65 @@
   color: #c8cccd;
   text-align: center;
   cursor: pointer;
+}
+
+.mp-resn-editResn-hovinf {
+  position: absolute;
+  color: #c6cacb;
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 2px;
+  margin-left: 3px;
+  cursor: pointer;
+}
+
+$hovinf-tip-arrow-w: 6px;
+.mp-resn-editResn-hovinf-tip .arrow {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  bottom: $hovinf-tip-arrow-w*-1;
+  right: 2px;
+  border-top-color: $mp-bd-color;
+  /* border-top-color: rgba(0,0,0,.25); */
+  border-width: $hovinf-tip-arrow-w;
+  border-bottom-width: 0;
+
+}
+
+.mp-resn-editResn-hovinf-tip .arrow:after {
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  bottom: 1px;
+  margin-left: $hovinf-tip-arrow-w*-1;
+  content: '';
+  border-width: $hovinf-tip-arrow-w;
+  border-top-color: #f6f6f6;
+  border-bottom-width: 0;
+}
+
+.mp-resn-editResn-hovinf-tip {
+  position: absolute;
+  bottom: 24px;
+  right: 0;
+  width: 188px;
+  font-size: 12px;
+  text-align: left;
+  min-height: 64px;
+  background: #f6f6f6;
+  border: 1px solid $mp-bd-color;
+  color: #1b2129;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 /*新增资源位End*/
